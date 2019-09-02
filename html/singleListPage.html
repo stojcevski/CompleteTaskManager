@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <script src="../js/singleListPage.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 class="headerLine">Task Manager</h1>
+    <div id="backToListsBtn" onclick="location.href='listsPage.html'" class="fa fa-arrow-left"></div>
+    <br>
+    <h3 id="header" class="headerLine"></h3>
+    <br>
+    <div class="addElementForm">
+        <span class="descText">List Name:</span>
+        <input id="listNameInput" class="inputForms">
+    </div>
+    <div class="addElementForm">
+        <span class="descText">List Category:</span>
+        <select id="categoriesDropdown" class="inputForms">
+
+        </select>
+    </div>
+    <div class="addElementForm">
+        <span class="descText">List Tags (multiple):</span>
+        <select id="tagsDropdown" class="inputForms" multiple size="4">
+
+        </select>
+    </div>
+    <div id="taskWrapper" >
+        <div class="addElementForm">
+            <span class="descText">Task Name:</span>
+            <input id="taskNameInput" class="inputForms">
+        </div>
+        <div class="addElementForm">
+            <span class="descText">Task Description:</span>
+            <input id="taskDescInput" class="inputForms">
+        </div>
+        <div class="addElementForm">
+            <span class="descText">Task State:</span>
+            <select id="taskStateInput" class="inputForms">
+                <option value="Uncompleted">Uncompleted</option>
+                <option value="Completed">Completed</option>
+            </select>
+        </div>
+        <div class="addElementForm">
+            <button id="submitTaskBtn" class="descText" onclick="submitTask()">Submit Task</button>
+            <button class="descText" onclick="cancelTask()">Cancel</button>
+        </div>
+    </div>
+    <table id="tasksLists">
+        <tr id="headerRow">
+            <td></td>
+            <th class="headRow">Task Name</th>
+            <th class="headRow">Task State</th>
+            <th></th>
+        </tr>
+        <tr class="templateRow" hidden>
+            <td class="fa fa-bars" onclick="showAddTaskWrapper('details', this)"></td>
+            <td class="taskNameRow painted"></td>
+            <td class="taskStateRow painted"></td>
+            <td class="fa fa-trash" onclick="removeTask(this)"></td>
+        </tr>
+        <tr id="addList">
+            <th></th>
+            <td class="addCategoryBtn" onclick="showAddTaskWrapper('new')" colspan="2">+ Add Task</td>
+            <th></th>
+        </tr>
+    </table>
+    <div id="submitListBtnWrapper">
+        <button id="submitListBtn" onclick="submitList()">Submit List</button>
+    </div>
+</body>
+</html>

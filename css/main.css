@@ -1,0 +1,132 @@
+h1, h3 {
+    text-align: center;
+}
+
+#taskLists, #categoriesLists, #tagsLists, #tasksLists {
+    width:100%
+}
+
+#mainList {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    width: 60%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+tr {
+    padding: 1px;
+    border: 1px solid white;
+}
+
+.headRow {
+    background-color: #d3d3d3;
+}
+
+.addListBtn, .addCategoryBtn, .addTagBtn, .mainPageMenu {
+    background-color: #F5F5F5;
+    border: 2px solid grey;
+}
+
+.addListBtn:hover, .mainPageMenu:hover, .addCategoryBtn:hover, .addTagBtn:hover {
+    background-color: #d3d3d3;
+}
+
+.listRow:hover {
+    background-color: #F5F5F5;
+}
+
+.deleteCell {
+    display: inline;
+}
+
+.fa {
+    display: block!important;
+}
+
+#backToMainBtn, #backToListsBtn {
+    padding-left: 5%;
+}
+
+#fieldDesc, .fieldDesc1 {
+    float: left;
+    width: 50%;
+    text-align: right;
+
+}
+
+#fieldDescTask {
+
+    width: 50%;
+    text-align: right;
+
+}
+
+#inputField, .inputField1 {
+    float: left;
+    width: 50%;
+    text-align: left;
+
+}
+
+#inputFieldTask {
+    float: right;
+    width: 50%;
+    text-align: left;
+
+}
+
+.descText {
+    margin: 10px;
+    width: 30%;
+    text-align: right;
+}
+
+.inputForms {
+    display: block;
+    margin: 10px;
+    width: 30%;
+}
+
+#taskWrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+    justify-content: center;
+    background-color: cornsilk;
+}
+
+#addListForm, .addElementForm {
+    display: flex;
+    justify-content: center;
+}
+
+.categoryTxt, #categoryInput, .tagTxt, #tagInput, #btnWrapper {
+    margin: 5%;
+    float: left;
+}
+
+#submitListBtnWrapper {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#categoryWrapper, #tagWrapper {
+    display: none;
+    justify-content: center;
+}
+
+button {
+   font-weight: bolder;
+}
+
+
+
+

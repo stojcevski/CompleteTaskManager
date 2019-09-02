@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tag</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/tagPage.js"></script>
+</head>
+<body>
+<h1 class="headerLine">Task Manager</h1>
+<div id="backToMainBtn" onclick="location.href='mainPage.html'" class="fa fa-arrow-left"></div>
+<br>
+<h3 class="headerLine">Tags</h3>
+<br>
+<table id="tagsLists">
+    <tr id="headerRow">
+        <td></td>
+        <th class="headRow">Tag Name</th>
+        <th></th>
+    </tr>
+    <tr class="templateRow" hidden>
+        <td ></td>
+        <td class="tagNameRow"></td>
+        <td></td>
+    </tr>
+    <tr id="addList">
+        <th></th>
+        <td class="addTagBtn" onclick="showTagWrapper()">+ Add Tag</td>
+        <th></th>
+    </tr>
+</table>
+<div id="tagWrapper">
+    <span class="tagTxt">Insert Tag Name:</span>
+    <span id="tagInput"><input type="text" id="tagInputField"></span>
+    <span id="btnWrapper">
+            <button id="submitTagBtn" onclick="submitTag()">Submit Tag</button>
+            <button id="cancelTagBtn" onclick="cancelTag()">Cancel</button>
+        </span>
+</div>
+</body>
+</html>
